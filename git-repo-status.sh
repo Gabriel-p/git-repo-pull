@@ -11,8 +11,9 @@ do
   # Check if the folder .git exists which
   # means it is a Git repo.
   if [ -d $repo.git ]; then
-	  git status
-	  echo -e "Done.\n"
+  	git fetch
+	git status
+	echo -e "Done.\n"
   else
   	echo -e "Not a Git repo.\n"
   fi
